@@ -4,13 +4,10 @@ function letsCount(countBy,countTo) {
   var countTo = parseInt(countTo);
   var set = [];
   for (var index = countBy;index <= countTo; index += countBy){
-    set.push(index+" ");
+    set.push(" "+index);
   };
-
-  return set;
-  alert(set);
-}
-
+  return set.toString();
+};
 //User Interface
 $(document).ready(function() {
   $("#countParameters").submit(function(event) {
